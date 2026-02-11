@@ -1,6 +1,6 @@
 # CodeBox Full-Stack Learning Lab
 
-A Node.js + React interactive coding lab inspired by challenge platforms like CodeCrafters.
+A Node.js + React interactive coding lab
 
 ## What is included
 
