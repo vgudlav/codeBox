@@ -1,0 +1,158 @@
+:root {
+  color-scheme: dark;
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: #111827;
+  color: #e5e7eb;
+}
+
+.app-shell {
+  padding: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+header h1 {
+  margin-bottom: 0.25rem;
+}
+
+header p {
+  margin-top: 0;
+  color: #9ca3af;
+}
+
+.content-grid {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 1rem;
+  align-items: start;
+}
+
+.panel {
+  background: #1f2937;
+  border: 1px solid #374151;
+  border-radius: 12px;
+  padding: 1rem;
+}
+
+.panel-title-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.challenge-list ul {
+  list-style: none;
+  padding: 0;
+  margin: 1rem 0 0;
+  display: grid;
+  gap: 0.75rem;
+}
+
+.challenge-list button {
+  width: 100%;
+  border: 1px solid #374151;
+  background: #111827;
+  color: inherit;
+  text-align: left;
+  border-radius: 10px;
+  padding: 0.75rem;
+  cursor: pointer;
+  display: grid;
+  gap: 0.35rem;
+}
+
+.challenge-list button.selected {
+  border-color: #22c55e;
+  box-shadow: 0 0 0 1px #22c55e;
+}
+
+.challenge-list small,
+.challenge-list p {
+  margin: 0;
+  color: #9ca3af;
+}
+
+.editor-panel textarea {
+  width: 100%;
+  min-height: 250px;
+  margin-top: 0.5rem;
+  margin-bottom: 0.75rem;
+  background: #0b1120;
+  color: #d1fae5;
+  border: 1px solid #374151;
+  border-radius: 10px;
+  padding: 0.75rem;
+  font-family: "Fira Code", Consolas, monospace;
+}
+
+.examples-box {
+  background: #111827;
+  border: 1px dashed #4b5563;
+  border-radius: 10px;
+  padding: 0.75rem;
+  margin: 0.75rem 0;
+}
+
+.examples-box pre {
+  white-space: pre-wrap;
+  margin: 0.35rem 0;
+}
+
+.run-button {
+  border: none;
+  background: #22c55e;
+  color: #052e16;
+  font-weight: 700;
+  border-radius: 8px;
+  padding: 0.6rem 1rem;
+  cursor: pointer;
+}
+
+.run-button:disabled {
+  opacity: 0.6;
+  cursor: wait;
+}
+
+.test-report ul {
+  list-style: none;
+  padding: 0;
+  display: grid;
+  gap: 0.75rem;
+}
+
+.test-report li {
+  border-radius: 10px;
+  padding: 0.6rem;
+  border: 1px solid transparent;
+}
+
+.test-report li.pass {
+  background: rgba(34, 197, 94, 0.12);
+  border-color: rgba(34, 197, 94, 0.5);
+}
+
+.test-report li.fail {
+  background: rgba(239, 68, 68, 0.12);
+  border-color: rgba(239, 68, 68, 0.5);
+}
+
+.hint,
+.global-error,
+.compile-error {
+  color: #fca5a5;
+}
+
+@media (max-width: 900px) {
+  .content-grid {
+    grid-template-columns: 1fr;
+  }
+}
