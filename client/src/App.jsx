@@ -88,10 +88,10 @@ export default function App() {
   return (
     <main className="app-shell">
       <header>
-        <h1>CodeBox Full-Stack Learning Lab</h1>
+        <h1>Enterprise Apps Developer Simulation Lab</h1>
         <p>
-          Practice JavaScript coding challenges with instant backend evaluation, inspired by
-          interactive tracks like CodeCrafters.
+          Practice realistic L3 enterprise application ownership scenarios focused on automation,
+          scripting, incident response, and SaaS admin engineering.
         </p>
       </header>
 
